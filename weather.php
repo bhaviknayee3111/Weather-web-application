@@ -10,7 +10,7 @@ if (empty($_GET['city'])) {
 }
 
 $city = urlencode($_GET['city']);
-$apiKey = "87eadbedf2f6acae69a4a76efa2e481b"; // your OpenWeatherMap API key
+$apiKey = ""; // your OpenWeatherMap API key
 $url = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$apiKey&units=metric";
 
 // Use cURL for fetching

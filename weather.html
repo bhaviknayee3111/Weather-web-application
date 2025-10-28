@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="weather-header">
+        <h2>Weather</h2>
+        <div class="search-box">
+          <input type="text" placeholder="Search city..." />
+     <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
+
+      <div class="main-weather">
+        <div class="left">
+          <h3 class="city">Seattle</h3>
+          <div class="temp-info">
+            <span class="icon">☀️</span>
+            <span class="temp">23°C</span>
+          </div>
+          <p class="condition">Sunny</p>
+          <p class="feels">Feels like 24°</p>
+          <p class="humidity">Humidity 50%</p>
+          <p class="wind">Wind 3 km/h</p>
+          <div class="sun-times">
+            <span>Sunrise<br />5:23 AM</span>
+            <span>Sunset<br />8:37 PM</span>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="hourly">
+            <h4>Hourly Forecast</h4>
+            <div class="hourly-items">
+              <div class="item">
+                <p>10:00</p>
+                <span>☀️</span>
+                <p>23°</p>
+              </div>
+              <div class="item">
+                <p>11:00</p>
+                <span>☀️</span>
+                <p>24°</p>
+              </div>
+              <div class="item">
+                <p>12:00</p>
+                <span>⛅</span>
+                <p>23°</p>
+              </div>
+              <div class="item">
+                <p>1:00</p>
+                <span>🌧️</span>
+                <p>22°</p>
+              </div>
+              <div class="item">
+                <p>2:00</p>
+                <span>🌧️</span>
+                <p>21°</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="daily">
+            <h4>7-Day Forecast</h4>
+            <div class="daily-items">
+              <div class="day">
+                <p>Mon</p>
+                <span>☀️</span>
+                <p>23°</p>
+              </div>
+              <div class="day">
+                <p>Tue</p>
+                <span>☀️</span>
+                <p>24°</p>
+              </div>
+              <div class="day">
+                <p>Wed</p>
+                <span>🌧️</span>
+                <p>22°</p>
+              </div>
+              <div class="day">
+                <p>Thu</p>
+                <span>🌧️</span>
+                <p>19°</p>
+              </div>
+              <div class="day">
+                <p>Fri</p>
+                <span>🌧️</span>
+                <p>18°</p>
+              </div>
+              <div class="day">
+                <p>Sat</p>
+                <span>🌧️</span>
+                <p>20°</p>
+              </div>
+              <div class="day">
+                <p>Sun</p>
+                <span>🌧️</span>
+                <p>20°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

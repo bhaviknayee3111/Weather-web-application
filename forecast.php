@@ -9,7 +9,7 @@ if (empty($_GET['city'])) {
 
 $city = urlencode($_GET['city']);
 $apiKey = "";// your API key
-$url = "https://api.openweathermap.org/data/2.5/forecast?q=$city&appid=$apiKey&units=metric";
+$url = ";
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
